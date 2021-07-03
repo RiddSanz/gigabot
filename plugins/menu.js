@@ -28,22 +28,26 @@ let tags = {
 }
 const defaultMenu = {
   before: `
-╭─「 %me 」
-│ Hai, %name!
-│
-│ Tersisa *%limit Limit*
-│ Level *%level (%exp / %maxexp)* [%xp4levelup lagi untuk levelup]
-│ %totalexp XP in Total
-│ 
-│ Tanggal: *%week %weton, %date*
-│ Tanggal Islam: *%dateIslamic*
-│ Waktu: *%time*
-│
-│ Uptime: *%uptime (%muptime)*
-│ Database: %rtotalreg of %totalreg
-│ Github:
-│ %github
-╰────
+•─────•「 *WA-BOT* 」•─────•
+
+▣「 *YOUR INFORMATION* 」
+▢ *Name :* %name
+▢ *Remaining :* %limitⓁ
+▢ *Level : %level [%exp / %maxexp]*
+▢ *[%xp4levelup Again For Levelup]*
+▢ *%totalexp Xp In Total*
+
+▣「 *BOT INFORMATION* 」
+▢ *Name :* %me
+▢ *Prefix :* [ %p ]
+▢ *Status :* Active 24H
+▢ *Uptime :* ⎋%uptime
+
+▣「 *DATE INFORMATION* 」
+▢ *Date :* %week , %date
+▢ *Islamic :* %dateIslamic
+
+•─────•「 *MENU* 」•─────•
 %readmore`.trimStart(),
   header: '╭─「 %category 」',
   body: '│ • %cmd %islimit %isPremium',
