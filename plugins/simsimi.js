@@ -5,7 +5,7 @@ let handler = async(m, { conn, text }) => {
 
   //await m.reply('Searching...')
 	axios.get(`https://lindow-api.herokuapp.com/api/simi?text=${text}&lang=id&apikey=LindowApi`).then ((res) => {
-	 	let hasil = `: ${res.data.response.text}`
+	 	let hasil = `${res.data.response.text}`
 
     conn.reply(m.chat, hasil, m)
 	})
